@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const HERO_IMG = "https://ianmjbgdzgpmjlbndknv.supabase.co/storage/v1/object/public/studio-assets/user_3GpC8gjR8Yx9nfhD8sQtPjMPpkQ/a522d615-aacf-4523-a3be-988806aa8a1f/img/real-0.jpg";
+const HERO_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/aNztivesEwSomoIJ.jpg";
 
 export default function Hero() {
   const titleRef = useRef<HTMLHeadingElement>(null);

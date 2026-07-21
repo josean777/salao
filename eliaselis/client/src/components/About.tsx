@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const ABOUT_IMG = "https://ianmjbgdzgpmjlbndknv.supabase.co/storage/v1/object/public/studio-assets/user_3GpC8gjR8Yx9nfhD8sQtPjMPpkQ/a522d615-aacf-4523-a3be-988806aa8a1f/img/real-1.jpg";
+const ABOUT_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/PdtgohdANPTFphTf.jpg";
 
 function useCountUp(end: number, duration: number = 2000) {
   const [count, setCount] = useState(0);
@@ -61,7 +61,7 @@ export default function About() {
             <div className="relative overflow-hidden rounded-sm">
               <img
                 src={ABOUT_IMG}
-                alt="Elias Elis Hair"
+                alt="Transformação loira Beach Contrast realizada no Elias Elis Espaço de Beleza"
                 className="w-full h-[500px] md:h-[600px] object-cover"
                 loading="lazy"
               />

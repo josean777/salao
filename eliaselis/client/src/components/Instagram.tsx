@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const IG_IMAGES = [
-  "https://ianmjbgdzgpmjlbndknv.supabase.co/storage/v1/object/public/studio-assets/user_3GpC8gjR8Yx9nfhD8sQtPjMPpkQ/a522d615-aacf-4523-a3be-988806aa8a1f/img/real-0.jpg",
-  "https://ianmjbgdzgpmjlbndknv.supabase.co/storage/v1/object/public/studio-assets/user_3GpC8gjR8Yx9nfhD8sQtPjMPpkQ/a522d615-aacf-4523-a3be-988806aa8a1f/img/real-1.jpg",
-  "https://ianmjbgdzgpmjlbndknv.supabase.co/storage/v1/object/public/studio-assets/user_3GpC8gjR8Yx9nfhD8sQtPjMPpkQ/a522d615-aacf-4523-a3be-988806aa8a1f/img/real-2.jpg",
+  "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/aNztivesEwSomoIJ.jpg",
+  "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/RqgvEYmyXSmmbTdx.jpg",
+  "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/PdtgohdANPTFphTf.jpg",
 ];
 
 export default function Instagram() {
