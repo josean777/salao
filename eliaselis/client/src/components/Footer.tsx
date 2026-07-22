@@ -1,4 +1,4 @@
-const LOGO_URL = "/manus-storage/elias-elis-logo_c334a4b0.jpeg";
+const LOGO_URL = "/elias-elis-logo.png";
 
 export default function Footer() {
   return (
@@ -101,9 +101,15 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Elias Elis Hair. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-2 text-white/30 text-sm">
-            <span>Feito com</span>
-            <i className="fas fa-heart text-[#C6A15B] text-xs" />
-            <span>para transformar vidas</span>
+            <span>Desenvolvido por</span>
+            <a 
+              href="https://www.instagram.com/josean7_?igsh=YWFyNW5qbXptZzF3&utm_source=qr" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#C6A15B] hover:underline"
+            >
+              Josean N. Simões
+            </a>
           </div>
         </div>
       </div>
