@@ -1,4 +1,4 @@
-const LOGO_URL = "/manus-storage/elias-elis-logo_c334a4b0.jpeg";
+const LOGO_URL = "/elias-elis-logo.png";
 
 export default function LoadingScreen() {
   return (
@@ -9,7 +9,7 @@ export default function LoadingScreen() {
           <img
             src={LOGO_URL}
             alt="Elias Elis Hair | Body | Soul"
-            className="h-28 w-auto mx-auto mb-6 object-contain animate-pulse"
+            className="h-28 w-auto mx-auto mb-6 object-contain"
           />
         </div>
 
