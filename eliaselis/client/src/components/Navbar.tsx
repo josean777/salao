@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/elias-elis-logo_c334a4b0.jpeg";
+const LOGO_URL = "/elias-elis-logo.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
