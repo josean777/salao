@@ -13,6 +13,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   const navLinks = [
     { href: "#inicio", label: "Início" },
     { href: "#sobre", label: "Sobre" },
@@ -24,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 isolate transition-all duration-500 ${
         scrolled
           ? "bg-[#0A0A0A]/95 backdrop-blur-xl shadow-lg shadow-black/20"
           : "bg-transparent"
@@ -64,7 +71,11 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden text-white p-2"
+          type="button"
+          aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-navigation"
+          className="lg:hidden text-white p-2 rounded-sm hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A15B] transition-colors"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -72,13 +83,14 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-20 bg-[#0A0A0A]/98 backdrop-blur-xl transition-all duration-500 ${
+        id="mobile-navigation"
+        className={`lg:hidden absolute top-full left-0 right-0 max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain border-t border-white/10 bg-[#0A0A0A] shadow-2xl shadow-black/40 transition-[opacity,transform,max-height] duration-300 ${
           mobileOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+            ? "visible translate-y-0 opacity-100 pointer-events-auto"
+            : "invisible -translate-y-2 opacity-0 pointer-events-none max-h-0"
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div className="flex min-h-0 flex-col items-center gap-6 px-6 py-8">
           <img
             src={LOGO_URL}
             alt="Elias Elis Hair | Body | Soul"
