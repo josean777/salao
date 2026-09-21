@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const ABOUT_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/PdtgohdANPTFphTf.jpg";
+const ABOUT_IMG = "/images/gallery/IMG_8274.jpg";
 
 function useCountUp(end: number, duration: number = 2000) {
   const [count, setCount] = useState(0);

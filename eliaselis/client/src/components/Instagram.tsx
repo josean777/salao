@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const IG_IMAGES = [
-  "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/aNztivesEwSomoIJ.jpg",
-  "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/RqgvEYmyXSmmbTdx.jpg",
-  "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/PdtgohdANPTFphTf.jpg",
+  "/images/gallery/IMG_8278.jpg",
+  "/images/gallery/IMG_8276.jpg",
+  "/images/gallery/IMG_8279.jpg",
 ];
 
 export default function Instagram() {

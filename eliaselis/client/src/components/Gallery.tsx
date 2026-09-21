@@ -2,16 +2,28 @@ import { useEffect, useRef, useState } from "react";
 
 const galleryImages = [
   {
-    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/aNztivesEwSomoIJ.jpg",
-    alt: "Transformação morena iluminada realizada no Elias Elis Espaço de Beleza",
+    src: "/images/gallery/IMG_8273.jpg",
+    alt: "Cabelo loiro longo e ondulado realizado no Elias Elis Espaço de Beleza",
   },
   {
-    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/RqgvEYmyXSmmbTdx.jpg",
-    alt: "Mechas iluminadas com acabamento em perfil realizadas no Elias Elis Espaço de Beleza",
+    src: "/images/gallery/IMG_8274.jpg",
+    alt: "Cabelo loiro volumoso realizado no Elias Elis Espaço de Beleza",
   },
   {
-    src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/PdtgohdANPTFphTf.jpg",
-    alt: "Transformação loira Beach Contrast realizada no Elias Elis Espaço de Beleza",
+    src: "/images/gallery/IMG_8275.jpg",
+    alt: "Mechas em cabelo loiro acinzentado realizadas no Elias Elis Espaço de Beleza",
+  },
+  {
+    src: "/images/gallery/IMG_8276.jpg",
+    alt: "Cabelo castanho longo e ondulado realizado no Elias Elis Espaço de Beleza",
+  },
+  {
+    src: "/images/gallery/IMG_8278.jpg",
+    alt: "Penteado em cabelo castanho realizado no Elias Elis Espaço de Beleza",
+  },
+  {
+    src: "/images/gallery/IMG_8279.jpg",
+    alt: "Cabelo loiro longo com ondas realizado no Elias Elis Espaço de Beleza",
   },
 ];
 

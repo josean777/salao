@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const DIFFERENTIALS_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663846512111/RqgvEYmyXSmmbTdx.jpg";
+const DIFFERENTIALS_IMG = "/images/gallery/IMG_8275.jpg";
 
 const differentials = [
   { icon: "fa-heart", title: "Atendimento personalizado", desc: "Cada cliente recebe atenção exclusiva e tratamento sob medida." },
